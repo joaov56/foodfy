@@ -3,7 +3,7 @@ const close = document.querySelector(".close-modal");
 const modalContent = document.querySelector(".modal-content");
 const modalOverlay = document.querySelector(".modal-overlay");
 
-for (card of cards) {
+for (let card of cards) {
   console.log(card);
 
   card.addEventListener("click", function () {
