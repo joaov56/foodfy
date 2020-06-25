@@ -1,0 +1,48 @@
+{% extends "layout.njk" %}
+
+{% block style %}
+    <link rel="stylesheet" href="/details.css">
+{% endblock style %}
+
+{% block content %}
+    <div class="conteudo">
+
+        <img src="{{item.image}}" alt="">
+
+        <div class="desc">
+            <h1 class="desc_title">{{item.title}}</h1>
+            <p class="autor">Por
+                {{item.author}}</p>
+        </div>
+
+        <div class="ingredient">
+
+            <h1>Ingredientes</h1>
+
+            <li>
+                {% for items in item.ingredients %}
+                    <ul>{{items}}</ul>
+                {% endfor %}
+            </li>
+        </div>
+
+        <div class="prepare">
+            <h1>Modo de preparo</h1>
+            <p>{{item.preparation}}</p>
+        </div>
+
+        {% if item.information === "" %}
+            <div class="add" type="hidden">
+                <h1>Informações adicionais</h1>
+                <p>{{item.information}}</p>
+            </div>
+        {% else %}
+            <div class="add">
+                <h1>Informações adicionais</h1>
+                <p>{{item.information}}</p>
+            </div>
+
+        {% endif %}
+
+    </div>
+{% endblock content %}

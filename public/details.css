@@ -1,0 +1,62 @@
+.conteudo {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.conteudo img {
+  border-radius: 15px;
+  width: 940px;
+  height: 240px;
+}
+
+.conteudo .desc {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.desc_title {
+  font-size: 36px;
+}
+
+.autor {
+  color: #777777;
+  font-size: 20px;
+}
+
+.ingredient {
+  font-size: 18px;
+  text-align: left;
+  margin-left: 480px;
+}
+
+.ingredient h1 {
+  font-size: 24px;
+}
+
+.ingredient ul {
+  list-style: none;
+}
+
+.prepare {
+  width: 940px;
+
+  text-align: left;
+  margin-top: 90px;
+  margin-left: 480px;
+}
+
+.prepare p {
+  font-size: 18px;
+}
+
+.add {
+  width: 940px;
+
+  text-align: left;
+  margin-top: 90px;
+  margin-left: 480px;
+}
+
+.add p {
+  font-size: 18px;
+}

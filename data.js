@@ -1,5 +1,6 @@
 module.exports = [
   {
+    id: 0,
     image:
       "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/burger.png",
     title: "Triplo bacon burger",
@@ -25,6 +26,7 @@ module.exports = [
       "Preaqueça a chapa, frigideira ou grelha por 10 minutos antes de levar os hambúrgueres. Adicione um pouquinho de óleo ou manteiga e não amasse os hambúrgueres! \n\n Você sabia que a receita que precede o hambúrguer surgiu no século XIII, na Europa? A ideia de moer a carne chegou em Hamburgo no século XVII, onde um açogueiro resolveu também temperá-la. Assim, a receita foi disseminada nos Estados Unidos por alemães da região. Lá surgiu a ideia de colocar o hambúrguer no meio do pão e adicionar outros ingredientes, como queijom tomates e alface.",
   },
   {
+    id: 1,
     image:
       "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/pizza.png",
     title: "Pizza 4 estações",
@@ -54,6 +56,7 @@ module.exports = [
       "Pizza de liquidificador é uma receita deliciosa e supersimples de preparar. Feita toda no liquidificador, ela é bem prática para o dia a dia. Aqui no TudoGostoso você também encontra diversas delícias práticas feitas no liquidificador: massa de panqueca, torta de frango de liquidificador, pão de queijo de liquidificador, bolo de banana, bolo de chocolate e muito mais!",
   },
   {
+    id: 2,
     image:
       "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/asinha.png",
     title: "Asinhas de frango ao barbecue",
@@ -72,6 +75,7 @@ module.exports = [
     information: "",
   },
   {
+    id: 3,
     image:
       "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/lasanha.png",
     title: "Lasanha mac n' cheese",
@@ -93,6 +97,7 @@ module.exports = [
     information: "Recheie a lasanha com o que preferir.",
   },
   {
+    id: 4,
     image:
       "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/macarrao.png",
     title: "Espaguete ao alho",
@@ -119,6 +124,7 @@ module.exports = [
       "Não lave o macarrão nem passe óleo ou gordura nele depois de escorrê-lo. Coloque direto na frigideira.",
   },
   {
+    id: 5,
     image:
       "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/doce.png",
     title: "Docinhos pão-do-céu",
