@@ -144,3 +144,60 @@ footer p {
 .texts_last {
   margin-bottom: 145px;
 }
+
+.modal-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal {
+  background-color: white;
+  width: 900px;
+  height: 500px;
+  margin: 5vh auto;
+  position: relative;
+  border-radius: 10px;
+}
+
+.modal .close-modal {
+  color: black;
+  position: absolute;
+  right: 15px;
+  top: 8px;
+  cursor: pointer;
+}
+
+/* MODAL-ACTIVE */
+
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-content img {
+  width: auto;
+  height: auto;
+
+  top: 5%;
+  border-radius: 9px;
+  margin-left: 155px;
+  margin-right: 160px;
+  margin-top: 50px;
+}
+
+.modal-content h1 {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.modal-content p {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #777777;
+  text-align: center;
+}

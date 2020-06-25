@@ -4,7 +4,7 @@ const modalContent = document.querySelector(".modal-content");
 const modalOverlay = document.querySelector(".modal-overlay");
 
 for (let card of cards) {
-  console.log(card);
+  console.log(card.img);
 
   card.addEventListener("click", function () {
     modalOverlay.classList.add("active");

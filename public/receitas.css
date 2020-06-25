@@ -49,6 +49,7 @@ main h2 {
 .card {
   width: 300px;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 
 .card img {
@@ -128,14 +129,14 @@ footer p {
   margin-top: 50px;
 }
 
-.modal-content h1 {
+.modal-content p {
   margin-top: 30px;
   text-align: center;
+  font-size: 30px;
+  font-weight: bold;
 }
 
-.autor_modal {
-  margin-top: 20px;
-  font-size: 20px;
+.modal-content .autor {
+  font-size: 14px;
   color: #777777;
-  text-align: center;
 }
