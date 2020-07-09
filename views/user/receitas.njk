@@ -1,0 +1,42 @@
+{% extends "layout.njk" %}
+
+{% block style %}
+  <link rel="stylesheet" href="/user/receitas.css"/>
+{% endblock style %}
+
+</head>
+
+{% block content %}
+<div class="header">
+  <section class="content">
+
+    <main>
+      <div class="grid">
+        {% for data in datas %}
+          <div class="card" id="{{data.id}}">
+            <img src="{{data.image}}" alt=""/>
+            <p>{{data.title}}</p>
+            <p class="autor">{{data.author}}</p>
+          </div>
+        {% endfor %}
+        {% for data in datas %}
+          <div class="card" id="{{data.id}}">
+            <img src="{{data.image}}" alt=""/>
+            <p>{{data.title}}</p>
+            <p class="autor">{{data.author}}</p>
+          </div>
+        {% endfor %}
+        {% for data in datas %}
+          <div class="card" id="{{data.id}}">
+            <img src="{{data.image}}" alt=""/>
+            <p>{{data.title}}</p>
+            <p class="autor">{{data.author}}</p>
+          </div>
+        {% endfor %}
+      </div>
+    </main>
+  </section>
+</div>
+{% endblock content %}
+
+</html>

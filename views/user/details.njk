@@ -1,0 +1,83 @@
+{% extends "layout.njk" %}
+
+{% block style %}
+    <link rel="stylesheet" href="/user/details.css">
+{% endblock style %}
+
+{% block content %}
+    <div class="conteudo">
+
+        <img src="{{item.image}}" alt="">
+
+        <div class="desc">
+            <h1 class="desc_title">{{item.title}}</h1>
+            <p class="autor">Por
+                {{item.author}}</p>
+        </div>
+
+        <div class="ingredient">
+
+            <div class="span">
+
+                <h1>Ingredientes</h1>
+
+                <span>Esconder</span>
+
+            </div>
+
+            <ul class="contents">
+                {% for items in item.ingredients %}
+                    <li>{{items}}</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div class="prepare ingredient">
+            <div class="span">
+                <h1>Modo de preparo</h1>
+                <span>Esconder</span>
+
+            </div>
+
+            <ul class="contents">
+
+                <p>{{item.preparation}}</p>
+            </ul>
+        </div>
+
+        <div class="add">
+            <h1>Informações adicionais</h1>
+            <p>{{item.information}}</p>
+        </div>
+
+        <script>
+            const description = document.querySelector(".ingredient");
+
+            const span = description.querySelector(".span");
+            console.log(description);
+            console.log(span)
+
+            const content = document.querySelector(".contents")
+            console.log(content)
+
+            span.addEventListener("click", function () {
+                if (span.querySelector('span').innerHTML === 'Esconder') {
+                    content
+                        .classList
+                        .add('hide')
+                    span
+                        .querySelector('span')
+                        .innerText = 'Mostrar'
+                } else {
+                    content
+                        .classList
+                        .remove('hide')
+                    span
+                        .querySelector('span')
+                        .innerText = 'Esconder'
+                }
+            })
+        </script>
+
+    </div>
+{% endblock content %}
