@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.header {
+  margin-top: 38px;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.text {
+  text-decoration: none;
+  text-align: center;
+}
+
+.text img {
+  margin-right: 120px;
+  font-style: italic;
+}
+
+.text a {
+  text-decoration: none;
+  color: black;
+  margin-right: 30px;
+}
+
+div.show {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 940px;
+  margin: 0 auto;
+  padding-top: 55px;
+}
+
+div.show h1 {
+  font-weight: bold;
+  font-size: 24px;
+  color: #111111;
+}
+
+div.show a {
+  text-decoration: none;
+  padding: 9px 20px;
+  background-color: #6558c3;
+  color: white;
+  border-radius: 4px;
+}
+
+.conteudo {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.conteudo img {
+  border-radius: 15px;
+  width: 940px;
+  height: 240px;
+}
+
+.conteudo .desc {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.desc_title {
+  font-size: 36px;
+}
+
+.autor {
+  color: #777777;
+  font-size: 20px;
+}
+
+.ingredient {
+  font-size: 18px;
+  text-align: left;
+  margin-left: 480px;
+}
+
+.ingredient h1 {
+  font-size: 24px;
+}
+
+.ingredient ul {
+  list-style: none;
+}
+
+.prepare {
+  width: 940px;
+
+  text-align: left;
+  margin-top: 90px;
+  margin-left: 480px;
+}
+
+.prepare p {
+  font-size: 18px;
+}
+
+.add {
+  width: 940px;
+
+  text-align: left;
+  margin-top: 90px;
+  margin-left: 480px;
+}
+
+.add p {
+  font-size: 18px;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+footer {
+  margin-top: 50px;
+  background-color: #eeeeee;
+  height: 60px;
+}
+
+footer p {
+  font-size: 14px;
+  padding-top: 20px;
+  text-align: center;
+  color: #999999;
+}

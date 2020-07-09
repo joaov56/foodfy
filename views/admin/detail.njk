@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/admin/detail.css">
+        <title>Admin Detail</title>
+    </head>
+    <body>
+
+        <div class="show">
+
+            <h1>Receita:
+                {{data.title}}</h1>
+            <a href="/admin/recipes/{{item.id}}/edit">Editar Receita</a>
+
+        </div>
+        <div class="conteudo">
+
+            <img src="{{data.image}}" alt="">
+
+            <div class="desc">
+                <h1 class="desc_title">{{data.title}}</h1>
+                <p class="autor">Por
+                    {{data.author}}</p>
+            </div>
+
+            <div class="ingredient">
+
+                <div class="span">
+
+                    <h1>Ingredientes</h1>
+
+                    <span>Esconder</span>
+
+                </div>
+
+                <ul class="contents">
+                    {% for items in data.ingredients %}
+                        <li>{{items}}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+
+            <div class="prepare ingredient">
+                <div class="span">
+                    <h1>Modo de preparo</h1>
+                    <span>Esconder</span>
+
+                </div>
+
+                <ul class="contents">
+
+                    <p>{{data.preparation}}</p>
+                </ul>
+            </div>
+
+            <div class="add">
+                <h1>Informações adicionais</h1>
+                <p>{{data.information}}</p>
+            </div>
+
+            <script>
+                const description = document.querySelector(".ingredient");
+
+                const span = description.querySelector(".span");
+                console.log(description);
+                console.log(span)
+
+                const content = document.querySelector(".contents")
+                console.log(content)
+
+                span.addEventListener("click", function () {
+                    if (span.querySelector('span').innerHTML === 'Esconder') {
+                        content
+                            .classList
+                            .add('hide')
+                        span
+                            .querySelector('span')
+                            .innerText = 'Mostrar'
+                    } else {
+                        content
+                            .classList
+                            .remove('hide')
+                        span
+                            .querySelector('span')
+                            .innerText = 'Esconder'
+                    }
+                })
+            </script>
+        </body>
+    </html>

@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  background-color: #111111;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.content {
+  position: absolute;
+  left: 380px;
+}
+
+/* RECEITAS */
+
+.receitas {
+  margin: 50px auto;
+  max-width: 900px;
+}
+
+.receitas h1 {
+  display: inline;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 500px 500px;
+  margin: 0 auto;
+}
+
+.card {
+  display: flex;
+  margin-top: 30px;
+}
+.card img {
+  width: 250px;
+  height: 100px;
+  border-radius: 15px;
+}
+
+.card .card-text {
+  margin-left: 20px;
+}
+
+.card .card-text .title {
+  font-weight: 400;
+  font-size: 18px;
+  color: #111111;
+}
+
+.card .card-text .author {
+  font-size: 14px;
+  color: #777777;
+}
+
+.card .card-text .see {
+  font-weight: bold;
+  font-size: 14px;
+  color: #6558c3;
+  text-decoration: none;
+}

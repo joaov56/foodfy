@@ -21,11 +21,11 @@
         <h2>Mais acessadas</h2>
         <div class="grid">
           {% for data in datas %}
-            <div class="card" id="{{data.id}}">
+            <a class="card" href="/recipes/{{data.id}}">
               <img src="{{data.image}}" alt=""/>
-              <p>{{data.title}}</p>
+              <p class="title">{{data.title}}</p>
               <p class="autor">{{data.author}}</p>
-            </div>
+            </a>
           {% endfor %}
 
         </div>

@@ -88,6 +88,7 @@ main h2 {
 }
 .card {
   width: 300px;
+  text-decoration: none;
 }
 
 .card img {
@@ -108,6 +109,9 @@ main h2 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
+}
+.title {
+  color: #111111;
 }
 footer {
   margin-top: 50px;
