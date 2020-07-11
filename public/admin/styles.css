@@ -20,11 +20,24 @@ header {
   left: 380px;
 }
 
+.texts {
+  display: flex;
+  justify-content: space-between;
+}
+
+.texts a {
+  font-size: 14px;
+  background-color: #6558c3;
+  text-decoration: none;
+  color: white;
+  border-radius: 4px;
+  padding: 8px;
+}
 /* RECEITAS */
 
 .receitas {
   margin: 50px auto;
-  max-width: 900px;
+  max-width: 940px;
 }
 
 .receitas h1 {

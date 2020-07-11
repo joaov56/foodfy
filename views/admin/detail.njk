@@ -8,11 +8,19 @@
     </head>
     <body>
 
+        <header>
+
+            <div class="text content">
+                <a href="/admin"><img src="/assets/logo.png" alt=""/></a>
+
+            </div>
+        </header>
+
         <div class="show">
 
             <h1>Receita:
                 {{data.title}}</h1>
-            <a href="/admin/recipes/{{item.id}}/edit">Editar Receita</a>
+            <a href="/admin/recipes/{{data.id}}/edit">Editar Receita</a>
 
         </div>
         <div class="conteudo">
@@ -31,13 +39,12 @@
 
                     <h1>Ingredientes</h1>
 
-                    <span>Esconder</span>
-
                 </div>
 
                 <ul class="contents">
-                    {% for items in data.ingredients %}
-                        <li>{{items}}</li>
+                    {% for items in data.ingredient %}
+                        <li>-
+                            {{items}}</li>
                     {% endfor %}
                 </ul>
             </div>
@@ -45,13 +52,14 @@
             <div class="prepare ingredient">
                 <div class="span">
                     <h1>Modo de preparo</h1>
-                    <span>Esconder</span>
 
                 </div>
 
                 <ul class="contents">
-
-                    <p>{{data.preparation}}</p>
+                    {% for data in data.preparation %}
+                        <li>-
+                            {{data}}</li>
+                    {% endfor %}
                 </ul>
             </div>
 
@@ -60,33 +68,7 @@
                 <p>{{data.information}}</p>
             </div>
 
-            <script>
-                const description = document.querySelector(".ingredient");
+        </div>
 
-                const span = description.querySelector(".span");
-                console.log(description);
-                console.log(span)
-
-                const content = document.querySelector(".contents")
-                console.log(content)
-
-                span.addEventListener("click", function () {
-                    if (span.querySelector('span').innerHTML === 'Esconder') {
-                        content
-                            .classList
-                            .add('hide')
-                        span
-                            .querySelector('span')
-                            .innerText = 'Mostrar'
-                    } else {
-                        content
-                            .classList
-                            .remove('hide')
-                        span
-                            .querySelector('span')
-                            .innerText = 'Esconder'
-                    }
-                })
-            </script>
-        </body>
-    </html>
+    </body>
+</html>

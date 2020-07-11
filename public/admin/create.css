@@ -54,12 +54,25 @@ div.show h1 {
   color: #111111;
 }
 
-div.show a {
+div.show .btns a {
   text-decoration: none;
+  padding: 9px 20px;
+  color: white;
+  border-radius: 4px;
+}
+div .btns a:first-child {
+  background-color: #dc4747;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+div .btns button {
   padding: 9px 20px;
   background-color: #6558c3;
   color: white;
+  border: none;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .conteudo {
@@ -67,64 +80,35 @@ div.show a {
   max-width: 940px;
   display: inline block;
   margin: 50px auto;
-}
-
-.conteudo img {
-  border-radius: 15px;
-  width: 940px;
-  height: 240px;
-}
-
-.conteudo .desc {
-  margin-top: 50px;
-}
-
-.desc_title {
-  font-size: 36px;
-}
-
-.autor {
-  color: #777777;
-  font-size: 20px;
-}
-
-.ingredient {
-  font-size: 18px;
   text-align: left;
 }
-
-.ingredient h1 {
-  font-size: 24px;
+.conteudo .item {
+  margin-top: 30px;
 }
 
-.ingredient ul {
-  list-style: none;
-}
-
-.contents {
+.conteudo .item h3 {
   font-size: 18px;
-  color: #444444;
-  line-height: 28px;
-}
-
-.prepare {
-  width: 940px;
-
   text-align: left;
-  margin-top: 50px;
+  margin-bottom: 10px;
 }
-
-.prepare p {
-  font-size: 18px;
+.conteudo .item input,
+textarea {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  padding-left: 16px;
+  font-size: 15px;
+  margin-bottom: 10px;
 }
-
 .add {
-  margin-top: 50px;
-  text-align: left;
+  font-size: 16px;
+  color: #6558c3;
+  margin-top: 15px;
+  font-weight: bold;
+  cursor: pointer;
 }
-
-.add p {
-  font-size: 18px;
-  color: #444444;
-  line-height: 28px;
+textarea {
+  height: 250px;
+  padding-top: 1.2%;
 }

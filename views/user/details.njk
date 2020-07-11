@@ -26,7 +26,7 @@
             </div>
 
             <ul class="contents">
-                {% for items in item.ingredients %}
+                {% for items in item.ingredient %}
                     <li>{{items}}</li>
                 {% endfor %}
             </ul>
@@ -41,7 +41,7 @@
 
             <ul class="contents">
 
-                <p>{{item.preparation}}</p>
+                <li>{{item.preparation}}</li>
             </ul>
         </div>
 

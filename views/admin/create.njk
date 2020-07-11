@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/admin/create.css">
+        <title>Admin Detail</title>
+    </head>
+    <body>
+
+        <header>
+
+            <div class="text content">
+                <a href="/admin"><img src="/assets/logo.png" alt=""/></a>
+
+            </div>
+        </header>
+
+        <form class="conteudo" action="/admin/recipes" method="POST">
+            <div class="show">
+                <h1>Criando Receita</h1>
+                <div class="btns">
+
+                    <button type="submit">Salvar Receita</a>
+                </div>
+
+            </div>
+
+            <div class="item">
+                <h3>Título da Receita</h3>
+                <input type="text" name="title" autocomplete="off">
+            </div>
+
+            <div class="item">
+                <h3>Autor da Receita</h3>
+                <input type="text" name="author">
+            </div>
+
+            <div class="item">
+                <h3>Imagem da Receita</h3>
+                <input type="url" name="image" id="" placeholder="Link da imagem" value="{{data.image}}">
+            </div>
+            <div class="item">
+                <h3>Ingredientes</h3>
+                <input type="text" name="ingredient[]" value="{{data}}">
+                <a class="add">Adicionar novo ingrediente</a>
+            </div>
+            <div class="item">
+                <h3>Modo de preparo</h3>
+
+                <input type="text" name="preparation[]" id="" placeholder="Adicione um passo" value="{{data}}">
+                <a class="add">Adicionar novo passo</a>
+            </div>
+            <div class="item">
+                <h3>Informações adicionais</h3>
+                <textarea name="information" id="description" placeholder="Digite sua mensagem">{{data.information}}</textarea>
+            </div>
+
+        </form>
+        <form action="/admin/recipes?_method=DELETE" method="POST" id="delete">
+            <input type="hidden" name="id" value="{{data.id}}">
+        </form>
+    </body>
+</html>
