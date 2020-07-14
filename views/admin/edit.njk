@@ -33,18 +33,34 @@
                 <h3>Imagem do produto</h3>
                 <input type="url" name="image" id="" placeholder="Link da imagem" value="{{data.image}}">
             </div>
-            <div class="item">
+            <div class="item" id="ingredients">
                 <h3>Ingredientes</h3>
                 {% for data in data.ingredient %}
-                    <input type="text" name="ingredient[]" value="{{data}}">
+                    <div class="ingredient">
+                        <input type="text" name="ingredient[]" value="{{data}}">
+                    </div>
                 {% endfor %}
             </div>
 
-            <div class="item">
+            <div class="buttonadd">
+
+                <button type="button" class="addIngredient" onclick="addIngredient()">Adicionar novo ingrediente</button>
+
+            </div>
+
+            <div class="item" id="prepare">
                 <h3>Modo de preparo</h3>
                 {% for data in data.preparation %}
-                    <input type="text" name="preparation[]" id="" placeholder="Adicione um passo" value="{{data}}">
+                    <div class="prepare">
+                        <input type="text" name="preparation[]" placeholder="Adicione um passo" value="{{data}}">
+                    </div>
                 {% endfor %}
+
+            </div>
+
+            <div class="buttonadd">
+
+                <button type="button" class="addPreparation" onclick="addPrepare()">Adicionar novo passo</button>
 
             </div>
 
@@ -58,4 +74,32 @@
             <input type="hidden" name="id" value="{{data.id}}">
         </form>
     </body>
+
+    <script>
+        const ingredients = document.querySelector("#ingredients")
+        function addIngredient() {
+            var field = document.querySelector(".ingredient");
+            const newField = field.cloneNode(true);
+            if (newField.children[0].value == "") 
+                return false;
+            
+            newField
+                .children[0]
+                .value = "";
+            ingredients.appendChild(newField)
+        }
+
+        const prepare = document.querySelector("#prepare");
+        function addPrepare() {
+            var field = document.querySelector(".prepare")
+            const newField = field.cloneNode(true);
+            if (newField.children[0].value == "") 
+                return false;
+            
+            newField
+                .children[0]
+                .value = "";
+            prepare.appendChild(newField)
+        }
+    </script>
 </html>

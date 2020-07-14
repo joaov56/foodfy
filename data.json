@@ -150,22 +150,50 @@
       ]
     },
     {
-      "id": "511",
-      "title": "asd",
+      "id": 51,
+      "title": "Pão de queijo",
       "author": "João",
-      "image": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/doce.png",
-      "ingredient": ["asda"],
-      "preparation": ["asd"],
-      "information": "asd"
+      "image": "https://www.clubedostestadores.com/wp-content/uploads/2020/04/CT-BR-Receita-Pao-Quejo-400x400-1.jpg",
+      "ingredient": [
+        "300 g de queijo minas ralado",
+        "500g de polvilho doce",
+        "1 xícara de leite",
+        "1/2 xícara de óleo",
+        "3 ovos",
+        "1 colher de sopa de sal",
+        ""
+      ],
+      "preparation": [
+        "Para começar, ferva o leite e o óleo.",
+        "Em seguida escalde o polvilho já com sal e misture bem.",
+        "Depois, adicione os ovos e misture até formar uma massa homogênea.",
+        "Feito isso, adicione o queijo e misture novamente. ",
+        "Em seguida é só fazer as bolinhas e colocar em uma assadeira untada de óleo. ",
+        " Por fim, leve ao forno pré-aquecido a 180ºC por 30 a 40 min."
+      ],
+      "information": ""
     },
     {
-      "id": "51",
-      "image": "https://img.itdg.com.br/tdg/images/recipes/000/301/150/322007/322007_original.jpg?mode=crop&width=710&height=400",
-      "title": "Macarrao com ovo",
-      "author": "João",
-      "ingredient": ["1 pacote de macarrão", "1 ovo"],
-      "preparation": ["Taca agua ovo e macarrão na panela"],
-      "information": "Nao se mate"
+      "id": 52,
+      "title": "Macarrão com queijo",
+      "author": "Karina",
+      "image": "https://img.itdg.com.br/tdg/images/recipes/000/037/939/52050/52050_original.jpg?mode=crop&width=710&height=400",
+      "ingredient": [
+        "1 pacote de macarrão cozido",
+        "1 colher (sopa) de manteiga",
+        "sal a gosto",
+        "1 caixinha de creme de leite",
+        "1 xícara (chá) de leite",
+        "1 xícara (chá) de queijo prato ralado",
+        "1 xícara (chá) de queijo provolone ralado"
+      ],
+      "preparation": [
+        "Em uma panela derreta a manteiga, junte o creme de leite e o leite.",
+        "Aqueça, porém sem deixar ferver.",
+        "Adicione os queijos, coloque sal a gosto.",
+        "Misture o macarrão à essa mistura."
+      ],
+      "information": ""
     }
   ]
 }

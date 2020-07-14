@@ -112,3 +112,13 @@ textarea {
   height: 250px;
   padding-top: 1.2%;
 }
+
+.addIngredient,
+.addPreparation {
+  background-color: white;
+  border: none;
+  font-weight: bold;
+  color: #6558c3;
+  font-size: 15px;
+  cursor: pointer;
+}

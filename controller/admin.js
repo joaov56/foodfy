@@ -49,8 +49,6 @@ exports.put = (req, res) => {
   const { id } = req.body;
   let index = 0;
 
-  console.log(req.body);
-
   const foundRecipe = data.recipes.find(function (recipe, foundIndex) {
     if (recipe.id == id) {
       index = foundIndex;
@@ -65,7 +63,6 @@ exports.put = (req, res) => {
     ...req.body,
   };
 
-  console.log(recipe);
   data.recipes[index] = recipe;
 
   fs.writeFile("data.json", JSON.stringify(data, null, 2), function (err) {
@@ -77,12 +74,6 @@ exports.put = (req, res) => {
 
 exports.post = (req, res) => {
   const keys = Object.keys(req.body);
-
-  for (key of keys) {
-    if (req.body[key] == "") {
-      return res.send("Please, fill all fields!");
-    }
-  }
 
   let { title, author, image, ingredient, preparation, information } = req.body;
 

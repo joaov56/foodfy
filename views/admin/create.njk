@@ -40,16 +40,34 @@
                 <h3>Imagem da Receita</h3>
                 <input type="url" name="image" id="" placeholder="Link da imagem" value="{{data.image}}">
             </div>
-            <div class="item">
+            <div class="item" id="ingredients">
                 <h3>Ingredientes</h3>
-                <input type="text" name="ingredient[]" value="{{data}}">
-                <a class="add">Adicionar novo ingrediente</a>
+
+                <div class="ingredient">
+                    <input type="text" name="ingredient[]" value="{{data}}">
+                </div>
+
             </div>
-            <div class="item">
+
+            <div class="buttonadd">
+
+                <button type="button" class="addIngredient" onclick="addIngredient() ">Adicionar novo ingrediente</button>
+
+            </div>
+
+            <div class="item" id="prepare">
                 <h3>Modo de preparo</h3>
 
-                <input type="text" name="preparation[]" id="" placeholder="Adicione um passo" value="{{data}}">
-                <a class="add">Adicionar novo passo</a>
+                <div class="prepare">
+                    <input type="text" name="preparation[]" placeholder="Adicione um passo" value="{{data}}">
+                </div>
+
+            </div>
+
+            <div class="buttonadd">
+
+                <button type="button" class="addPreparation" onclick="addPrepare()">Adicionar novo passo</button>
+
             </div>
             <div class="item">
                 <h3>Informações adicionais</h3>
@@ -60,5 +78,31 @@
         <form action="/admin/recipes?_method=DELETE" method="POST" id="delete">
             <input type="hidden" name="id" value="{{data.id}}">
         </form>
+        <script>
+            const ingredients = document.querySelector("#ingredients")
+
+            function addIngredient() {
+
+                var field = document.querySelector(".ingredient");
+
+                const newField = field.cloneNode(true);
+
+                newField
+                    .children[0]
+                    .value = "";
+                ingredients.appendChild(newField)
+            }
+
+            const prepare = document.querySelector("#prepare");
+            function addPrepare() {
+                var field = document.querySelector(".prepare")
+                const newField = field.cloneNode(true);
+
+                newField
+                    .children[0]
+                    .value = "";
+                prepare.appendChild(newField)
+            }
+        </script>
     </body>
 </html>

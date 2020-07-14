@@ -18,5 +18,11 @@ exports.recipes = (req, res) => {
 exports.detail = (req, res) => {
   const recipeIndex = req.params.id;
 
-  return res.render("./user/details", { item: data.recipes[recipeIndex] });
+  let receita = data.recipes.filter(function (recipe) {
+    return recipe.id == recipeIndex;
+  });
+
+  console.log(receita);
+
+  return res.render("./user/details", { item: receita[0] });
 };
