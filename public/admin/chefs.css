@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  background-color: #111111;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+main {
+  width: 940px;
+  margin: 50px auto;
+}
+.content {
+  position: absolute;
+  left: 380px;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.text {
+  text-decoration: none;
+  text-align: center;
+}
+
+.text-header {
+  font-size: 15px;
+  color: #111111;
+  margin-top: 20px;
+}
+
+.text img {
+  margin-right: 120px;
+  font-style: italic;
+}
+
+.text a {
+  text-decoration: none;
+  color: white;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 250px 250px 250px 250px;
+  width: 940px;
+  margin: 50px auto;
+  gap: 60px;
+}
+.card {
+  text-align: center;
+  display: flex;
+}
+
+.card img {
+  height: 128px;
+  width: 128px;
+  border-radius: 50%;
+}
+
+.card-text {
+  display: flex;
+  align-items: center;
+}
+
+.card-text .texts {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.card-text .author {
+  font-size: 18px;
+  color: #111111;
+}
+
+.card-text .see {
+  font-weight: bold;
+
+  color: #6558c3;
+  text-decoration: none;
+}

@@ -30,7 +30,7 @@
             <div class="desc">
                 <h1 class="desc_title">{{data.title}}</h1>
                 <p class="autor">Por
-                    {{data.author}}</p>
+                    {{data.chefs_name}}</p>
             </div>
 
             <div class="ingredient">
@@ -42,7 +42,7 @@
                 </div>
 
                 <ul class="contents">
-                    {% for items in data.ingredient %}
+                    {% for items in data.ingredients %}
                         <li>-
                             {{items}}</li>
                     {% endfor %}

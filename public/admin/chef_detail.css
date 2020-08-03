@@ -31,19 +31,35 @@ header {
   text-decoration: none;
   color: white;
   border-radius: 4px;
-  padding: 8px;
+  padding: 8px 32px;
 }
-/* RECEITAS */
 
 .receitas {
   margin: 50px auto;
   max-width: 940px;
 }
 
-.receitas h1 {
-  display: inline;
-  font-weight: bold;
-  font-size: 24px;
+.chef {
+  width: 940px;
+  margin: 20px auto;
+  display: flex;
+}
+
+.chef .avatar {
+  display: flex;
+  margin: 0 auto;
+}
+.chef .avatar img {
+  margin: 50px auto 10px auto;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.recipe_count {
+  font-size: 20px;
+  color: #777777;
+  text-align: center;
 }
 
 .cards {

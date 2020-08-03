@@ -1,8 +1,7 @@
 const express = require("express");
 const routes = express.Router();
-const data = require("../data");
-const user = require("./user");
-const admin = require("./admin");
+const user = require("./app/controllers/user");
+const admin = require("./app/controllers/admin");
 
 // USER AREA
 
@@ -15,6 +14,8 @@ routes.get("/about", user.about);
 routes.get("/recipes/:id", user.detail);
 
 // ADMIN AREA
+
+// RECIPES AREA
 
 routes.get("/admin", admin.index);
 
@@ -29,5 +30,11 @@ routes.put("/admin/recipes", admin.put);
 routes.delete("/admin/recipes", admin.delete);
 
 routes.post("/admin/recipes", admin.post);
+
+//CHEFS AREA
+
+routes.get("/admin/chefs", admin.chef);
+
+routes.get("/admin/chefs/:id", admin.detail_chef);
 
 module.exports = routes;

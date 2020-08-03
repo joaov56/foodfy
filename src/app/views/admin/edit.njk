@@ -30,14 +30,28 @@
             <input type="hidden" name="id" value="{{data.id}}">
 
             <div class="item">
+                <input type="text" name="title" value="{{data.title}}">
+            </div>
+
+            <div class="item">
+                <h3>Chefe</h3>
+                <select name="chef_id" id="select">
+                    {% for chef in chefs %}
+                        <option value="{{chef.id}}">{{chef.name}}</option>
+                    {% endfor %}
+
+                </select>
+            </div>
+
+            <div class="item">
                 <h3>Imagem do produto</h3>
                 <input type="url" name="image" id="" placeholder="Link da imagem" value="{{data.image}}">
             </div>
             <div class="item" id="ingredients">
                 <h3>Ingredientes</h3>
-                {% for data in data.ingredient %}
+                {% for data in data.ingredients %}
                     <div class="ingredient">
-                        <input type="text" name="ingredient[]" value="{{data}}">
+                        <input type="text" name="ingredients[]" value="{{data}}">
                     </div>
                 {% endfor %}
             </div>

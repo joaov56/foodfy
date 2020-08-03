@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Admin Foodfy</title>
-        <link rel="stylesheet" href="/admin/styles.css">
+        <link rel="stylesheet" href="/admin/chefs.css">
     </head>
 
     <body>
@@ -12,29 +12,31 @@
 
             <div class="text content">
                 <a href="/admin"><img src="/assets/logo.png" alt=""/></a>
+                <a href="/admin/chefs">Chefs</a>
 
             </div>
         </header>
 
-        <div class="receitas">
-            <div class="texts">
-                <h1>Gerenciar Receitas</h1>
-                <a href="/admin/create">Adicionar Receita</a>
+        <main>
+
+            <div class="text-header">
+                <h1>Gerenciar Chefs</h1>
             </div>
 
             <div class="cards">
-                {% for data in datas %}
+                {% for chef in chefs %}
                     <div class="card">
-                        <img src="{{data.image}}" alt="">
+                        <img src="{{chef.avatar_url}}" alt="">
                         <div class="card-text">
-                            <p class="title">{{data.title}}</p>
-                            <p class="author">{{data.author}}</p>
-                            <a href="/admin/recipes/{{data.id}}" class="see">Visualizar</a>
+                            <div class="texts">
+                                <p class="author">{{chef.name}}</p>
+                                <a href="/admin/chefs/{{chef.id}}" class="see">Visualizar</a>
+
+                            </div>
                         </div>
                     </div>
                 {% endfor %}
             </div>
-        </div>
+        </main>
 
     </body>
-</html>

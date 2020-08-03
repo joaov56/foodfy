@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Admin Foodfy</title>
+        <link rel="stylesheet" href="/admin/chef_detail.css">
+    </head>
+
+    <body>
+        <header>
+
+            <div class="text content">
+                <a href="/admin"><img src="/assets/logo.png" alt=""/></a>
+                <a href="/admin/chefs">Chefs</a>
+
+            </div>
+        </header>
+
+        <main>
+            <div class="receitas">
+                <div class="texts">
+                    <h1>Chef:
+                        {{chef.name}}</h1>
+                    <a href="/admin/create">Editar Chef</a>
+                </div>
+
+                <div class="chef">
+                    <div class="avatar">
+                        <div class="contents">
+                            <img src="{{chef.avatar_url}}" alt="">
+
+                            <h1 class="name">{{chef.name}}</h1>
+                            <p class="recipe_count">{{chef.total_recipes}}
+                                receitas</p>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="recipes">
+                    <h2>Receitas</h2>
+                    <div class="cards">
+                        {% for recipe in recipes %}
+                            <div class="card">
+                                <div class="image">
+                                    <img src="{{recipe.image}}" alt="">
+                                </div>
+                                <div class="card-text">
+                                    <p class="title">{{recipe.title}}</p>
+                                    <p class="author">{{recipe.chefs_name}}</p>
+                                    <a href="/admin/recipes/{{recipe.id}}">Visualizar</a>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+
+                </div>
+            </main>
+
+        </body>
