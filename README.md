@@ -24,7 +24,7 @@ O projeto foi desenvolvido usando as seguintes tecnologias
 ```bash
 
     #Clonar repositório
-    $ git clone https://github.com/joaov56/ecoleta.git
+    $ git clone https://github.com/joaov56/foodfy
 
     #Instalar dependências
     $ yarn install
